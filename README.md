@@ -42,6 +42,39 @@ NPM -------------------- To Uninstall
 NPM -------------------- To version chnage
 1)change the version number on package.json file and den npm publish
 
+=====================================================================================================
 
-  
+Use Bower n Grunt 
+
+Bower-----------------
+1) npm install -g bower
+Grunt-----------------
+1)npm install -g grunt-cli (for gloabally)
+2)npm init
+3)npm install grunt -S (locally inside the project directoy) to save in package.json file
+4)make a Gruntfile.js --- eg;
+            module.exports = function(grunt) {
+            
+              grunt.initConfig({
+                jshint: {
+                  files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+                  options: {
+                    globals: {
+                      jQuery: true
+                    }
+                  }
+                },
+                watch: {
+                  files: ['<%= jshint.files %>'],
+                  tasks: ['jshint']
+                }
+              });
+            
+              grunt.loadNpmTasks('grunt-contrib-jshint');
+              grunt.loadNpmTasks('grunt-contrib-watch');
+            
+              grunt.registerTask('default', ['jshint']);
+            
+            };
+5) den run grunt <specific task> command
     
