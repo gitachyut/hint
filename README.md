@@ -11,7 +11,7 @@ Pakagist ---------------- To Create
     "autoload":
       {
         "psr-4":{
-          "vendor\\name_of_package\\":"scr"
+          "vendor\\name_of_package\\":"src"
         }
       }
 5) keep adding files using ( git add . or git add * ) and git commit n den make git push .. Keep doing it untill the package 
@@ -22,7 +22,7 @@ Pakagist ---------------- To Create
 7) For version set --- Github respective repo -> Releases -> Add -> version -> 0.0.1 -> done
 
 Pakagist ---------------- To Install
-1) composer composer require vendor/name_of_package
+1)composer require vendor/name_of_package
 
 ================================================================================================================
 
@@ -48,6 +48,9 @@ Use Bower n Grunt
 
 Bower-----------------
 1) npm install -g bower
+bower init
+bower install package-name --save
+
 Grunt-----------------
 1)npm install -g grunt-cli (for gloabally)
 2)npm init
@@ -77,4 +80,13 @@ Grunt-----------------
             
             };
 5) den run grunt <specific task> command
+
+------for my own pc java n android enviroment --------
+
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home
+export ANT_HOME=/Users/KrishnaDeka/Library/apache-ant-1.9.7
+export ANDROID_HOME=/Users/KrishnaDeka/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+-----------------
     
