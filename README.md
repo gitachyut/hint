@@ -105,6 +105,7 @@ GitHub -----------
 7) git checkout -b branch_name
 8) to abort a merge confilct ->
     git merge --abort
+9) git reset HEAD filename ->to untracked file
     
 
     
