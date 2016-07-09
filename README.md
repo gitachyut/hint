@@ -83,10 +83,28 @@ Grunt-----------------
 
 ------for my own pc java n android enviroment --------
 
+
+++++++++++
+
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home
 export ANT_HOME=/Users/KrishnaDeka/Library/apache-ant-1.9.7
 export ANDROID_HOME=/Users/KrishnaDeka/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 -----------------
+
+
+GitHub -----------
+
+1) to revert change -> git checkout -- filename
+2) to checkout to previous commit -> git checkout shacode -- file/branch
+3) must commit before u switch a branch
+4) git reset --hard shacode // 
+5) delete untack file -> git clean -f
+6) ignore file -> using .gitignore file and git rm --cached filename
+7) git checkout -b branch_name
+8) to abort a merge confilct ->
+    git merge --abort
+    
+
     
