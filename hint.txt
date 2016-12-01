@@ -126,3 +126,9 @@ GitHub -----------
   
   1) git clone ssh://user@serve(ip/domain)/home/....*/repo.git
   2) git push --set-upstream origin branch_name
+  
+  
+  
+  ----------
+  To kill a process runing in a particular port
+  kill -9 $(lsof -t -i:443)
