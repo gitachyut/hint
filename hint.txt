@@ -132,3 +132,11 @@ GitHub -----------
   ----------
   To kill a process runing in a particular port
   kill -9 $(lsof -t -i:443)
+  
+  --------
+  Ionic framework info 
+  npm install -g ionic
+  ionic platform add ios
+  ionic platform add android
+  for my pc before apk generation run 
+  export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home
