@@ -1,3 +1,7 @@
+Initail git setup
+ git config --global user.email "you@example.com"
+ git config --global user.name "Your Name"
+
 # hint
 Pakagist ---------------- To Create
 1)initialize the github repo .
